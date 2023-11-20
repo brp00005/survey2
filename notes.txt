@@ -11,16 +11,19 @@ Function selected:
 )
 
 Translation: 
-Line 1: Header
+Line 1: Function header
 Line 2: if
 Line 3: Edge case: Are both lists empty? If so, true. 
 Line 4: Edge case 2: If only one of the lists is empty, return false. 
 
-Line 5: 
-((eq? (car lizt1) (car lizt2)) (same (cdr lizt1) (cdr lizt2))) - If the first elements of lizt1 and lizt2 are the same, it recursively calls the same function with the rest of the lists ((cdr lizt1) and (cdr lizt2)).
+Line 5/6
+((eq? (car lizt1) (car lizt2)) (same (cdr lizt1) (cdr lizt2))) - 
+If the first elements of lizt1 and lizt2 are the same, it recursively calls the same function with the rest of the lists ((cdr lizt1) and (cdr lizt2)).
 
-Line 6: 
+Line 7:
 If it makes it here, return false. 
+
+Close program
 
 B: 
 Branden: Clojure
