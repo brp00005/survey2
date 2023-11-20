@@ -21,3 +21,24 @@ Line 5:
 
 Line 6: 
 If it makes it here, return false. 
+
+B: 
+Branden: Clojure
+Rob: Common Lisp
+5 nontrivial cases
+
+C: Both work on Haskell
+5 nontrivial cases
+
+D: Both work on Scala
+3 nontrivial cases
+
+Extra bits at end of document: 
+E Follow the same protocols and functional semantics of the code from step A when possible.
+1 If a name conflicts with a reserved word, rename it based on conventions (for example, lizt instead of list).
+2 When possible, use a generic type. Otherwise, choose a homogeneous non-generic type instead.
+3 When comparing two values for equality, use any suitable equality semantics.
+4 Don’t redesign the code to use the imperative paradigm.
+5 Don’t use any library function which replicates the function you’re translating.
+6 Don’t use iteration. Use recursion as defined.
+7 Don’t introduce any new side effects. Don’t use any user input or global variables.
