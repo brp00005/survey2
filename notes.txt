@@ -27,17 +27,19 @@ Close program
 
 B: 
 Branden: Clojure, done
-Rob: Common Lisp
+Rob: Common Lisp, not done
 5 nontrivial cases
 Put expected results in comments 
 
 C: Both work on Haskell
 5 nontrivial cases
+Status: test cases, check if there is anything else 
 
 Both again 
 D: Scala
 3 nontrivial cases
-Unit tests 
+Unit tests: done (?)
+Function: not written
 
 Extra bits at end of document: 
 E Follow the same protocols and functional semantics of the code from step A when possible.
