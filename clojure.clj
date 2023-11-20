@@ -1,4 +1,4 @@
-;Author: Branden Purdum
+;Author: Branden Purdum, coauthor: Robert Coleman
 
 ;function header 
 (defn same

@@ -10,7 +10,7 @@ Function selected:
     )
 )
 
-Translation: 
+Breakdown: 
 Line 1: Function header
 Line 2: if
 Line 3: Edge case: Are both lists empty? If so, true. 
@@ -26,15 +26,18 @@ If it makes it here, return false.
 Close program
 
 B: 
-Branden: Clojure
+Branden: Clojure, done
 Rob: Common Lisp
 5 nontrivial cases
+Put expected results in comments 
 
 C: Both work on Haskell
 5 nontrivial cases
 
-D: Both work on Scala
+Both again 
+D: Scala
 3 nontrivial cases
+Unit tests 
 
 Extra bits at end of document: 
 E Follow the same protocols and functional semantics of the code from step A when possible.
