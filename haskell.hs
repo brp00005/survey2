@@ -1,4 +1,17 @@
 --Authors: Branden Purdum and Robert Coleman
+same :: Eq a => [a] -> [a] -> Bool
+same [] [] = True
+same [] _ = False
+same _ [] = False
+same (x:xs) (y:ys)
+    | x == y = same xs ys
+    | otherwise = False
+    
+-- This main function call will run the test cases of the code above. 
+-- main :: IO ()
+-- main = do
+
+
 
 -- Function signature: header, pass two int lists and return bool
 same :: [Int] -> [Int] -> Bool 
