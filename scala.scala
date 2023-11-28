@@ -1,4 +1,26 @@
 //Authors: Branden Purdum and Robert Coleman
+object Main extends App {
+  def same[A](list1: List[A], list2: List[A]): Boolean = {
+    (list1, list2) match {
+      case (Nil, Nil) => true
+      case (Nil, _) => false
+      case (_, Nil) => false
+      case (head1 :: tail1, head2 :: tail2) if head1 == head2 =>
+        same(tail1, tail2)
+      case _ => false
+    }
+  }
+
+  // Example usage:
+  val result = same(List(1, 2, 3), List(1, 2, 3))
+  println(result)
+}
+
+// This is the end of the main code.
+
+
+
+
 
 //import unit test stuff
 import org.scalatest.funspec.AnyFunSpec
