@@ -1,4 +1,5 @@
 ;Author: Branden Purdum, coauthor: Robert Coleman
+;Statement: This code follows the academic integrity policy
 
 ;function header 
 (defn same
