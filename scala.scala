@@ -26,7 +26,6 @@ class TestSuite extends AnyFunSuite {
     }
   }
 
-  
   test("Test edge cases: ") {
     assert(same(List(), List(1, 2, 3)) == false)
     assert(same(List(1, 2, 3), List()) == false)
@@ -39,21 +38,4 @@ class TestSuite extends AnyFunSuite {
     assert(same(List(3,2,1,5), List(3,2,1,1)) == false)
     assert(same(List(3,2,1,5), List(3,2,1,5)) == true)
   }
-}
-
-  test("Test edge cases: ") {
-    assert(same(List(), List(1, 2, 3)) == false)
-    assert(same(List(1, 2, 3), List()) == false)
-    assert(same(List(), List()) == true)
-  }
-
-  test("Test non-trivial cases: ") {
-    assert(same(List(1,2,4), List(1, 2, 3)) == false)
-    assert(same(List(1, 2, 3), List(1,2,3)) == true)
-    assert(same(List(3,2,1,5), List(3,2,1,1)) == false)
-    assert(same(List(3,2,1,5), List(3,2,1,5)) == true)
-  }
-}
-
-  
-             
+}    
