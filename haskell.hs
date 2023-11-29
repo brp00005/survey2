@@ -1,5 +1,4 @@
 --Authors: Branden Purdum and Robert Coleman
---Statement: This code follows the academic integrity policy
 
 -- Function signature: header, pass two int lists and return bool
 same :: [Int] -> [Int] -> Bool 

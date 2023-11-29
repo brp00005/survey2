@@ -1,28 +1,22 @@
-//Authors: Robert Coleman and Branden Purdum
-//Statement: This code follows the academic integrity policy
+//Authors: Branden Purdum and Robert Coleman
 
-import org.scalatest.funsuite.AnyFunSuite
+//import unit test stuff
+import org.scalatest.funspec.AnyFunSpec
+import org.scalatest.matchers.should.Matchers._
 
-//make stuff for tests 
-object TestRunner {
-  def main(args: Array[String]): Unit = {
-    
-    //instantiate object and run tests 
-    val testSuite = new TestSuite
-    testSuite.execute()
-  }
-}
+class scala extends AnyFunSpec{
+  //unit tests
+  describe("same"){
 
-//same function and unit tests
-class TestSuite extends AnyFunSuite {
-  def same[A](list1: List[A], list2: List[A]): Boolean = {
-    (list1, list2) match {
-      case (Nil, Nil) => true
-      case (Nil, _) => false
-      case (_, Nil) => false
-      case (head1 :: tail1, head2 :: tail2) if head1 == head2 =>
-        same(tail1, tail2)
-      case _ => false
+    //unit test 1
+    it("recursively compare [1, 2, 8], [1, 2, 8]"){
+      val result = same([1, 2, 8], [1, 2, 8])
+      result shouldEqual true
+    }
+    //unit test 2
+    it("recursively compare [1, 2, 2], [1, 2, 8]"){
+      val result = same([1, 2, 2], [1, 2, 8])
+      result shouldEqual false
     }
   }
 
@@ -39,3 +33,6 @@ class TestSuite extends AnyFunSuite {
     assert(same(List(3,2,1,5), List(3,2,1,5)) == true)
   }
 }
+
+  
+             
