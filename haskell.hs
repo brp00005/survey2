@@ -19,6 +19,12 @@ same (a:as) (b:bs)
   | a /= b    = False 
   | otherwise = same as bs
 
+main :: IO ()
+main = do
+  print (same [] [])        -- Should return True
+  print (same [1, 2] [])     -- Should return False
+  print (same [] [1, 2])     -- Should return False
+  print (same [1, 2, 3] [1, 2, 3]) -- Should return True
+  print (same [1, 2, 3] [1, 2, 4]) -- Should return False
 
---TODO test cases : trivial example
-print same [][] = true
+
